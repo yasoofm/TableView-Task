@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FCE5EE922B94840C005E3D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EE912B94840C005E3D16 /* AppDelegate.swift */; };
 		FCE5EE942B94840C005E3D16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EE932B94840C005E3D16 /* SceneDelegate.swift */; };
-		FCE5EE962B94840C005E3D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EE952B94840C005E3D16 /* ViewController.swift */; };
-		FCE5EE992B94840C005E3D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE5EE972B94840C005E3D16 /* Main.storyboard */; };
+		FCE5EE962B94840C005E3D16 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EE952B94840C005E3D16 /* StudentsTableViewController.swift */; };
 		FCE5EE9B2B94840E005E3D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE5EE9A2B94840E005E3D16 /* Assets.xcassets */; };
 		FCE5EE9E2B94840E005E3D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE5EE9C2B94840E005E3D16 /* LaunchScreen.storyboard */; };
+		FCE5EEA92B9484B1005E3D16 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EEA82B9484B1005E3D16 /* Student.swift */; };
+		FCE5EEAB2B9486C7005E3D16 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE5EEAA2B9486C7005E3D16 /* StudentDetailViewController.swift */; };
+		FCE5EEAE2B948821005E3D16 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCE5EEAD2B948821005E3D16 /* SnapKit */; };
+		FCE5EEB02B948821005E3D16 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FCE5EEAF2B948821005E3D16 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCE5EE8E2B94840C005E3D16 /* TableViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE5EE912B94840C005E3D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE5EE932B94840C005E3D16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCE5EE952B94840C005E3D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCE5EE982B94840C005E3D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCE5EE952B94840C005E3D16 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 		FCE5EE9A2B94840E005E3D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE5EE9D2B94840E005E3D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCE5EE9F2B94840E005E3D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE5EEA82B9484B1005E3D16 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		FCE5EEAA2B9486C7005E3D16 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudentDetailViewController.swift; path = TableViewProject/VCs/StudentDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE5EEAE2B948821005E3D16 /* SnapKit in Frameworks */,
+				FCE5EEB02B948821005E3D16 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,40 @@
 		FCE5EE902B94840C005E3D16 /* TableViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				FCE5EE912B94840C005E3D16 /* AppDelegate.swift */,
-				FCE5EE932B94840C005E3D16 /* SceneDelegate.swift */,
-				FCE5EE952B94840C005E3D16 /* ViewController.swift */,
-				FCE5EE972B94840C005E3D16 /* Main.storyboard */,
+				FCE5EEA72B948481005E3D16 /* models */,
+				FCE5EEA52B948463005E3D16 /* supporting */,
+				FCE5EEA62B948471005E3D16 /* VCs */,
 				FCE5EE9A2B94840E005E3D16 /* Assets.xcassets */,
 				FCE5EE9C2B94840E005E3D16 /* LaunchScreen.storyboard */,
 				FCE5EE9F2B94840E005E3D16 /* Info.plist */,
 			);
 			path = TableViewProject;
+			sourceTree = "<group>";
+		};
+		FCE5EEA52B948463005E3D16 /* supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FCE5EE912B94840C005E3D16 /* AppDelegate.swift */,
+				FCE5EE932B94840C005E3D16 /* SceneDelegate.swift */,
+			);
+			path = supporting;
+			sourceTree = "<group>";
+		};
+		FCE5EEA62B948471005E3D16 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				FCE5EEAA2B9486C7005E3D16 /* StudentDetailViewController.swift */,
+				FCE5EE952B94840C005E3D16 /* StudentsTableViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		FCE5EEA72B948481005E3D16 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FCE5EEA82B9484B1005E3D16 /* Student.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +114,10 @@
 			dependencies = (
 			);
 			name = TableViewProject;
+			packageProductDependencies = (
+				FCE5EEAD2B948821005E3D16 /* SnapKit */,
+				FCE5EEAF2B948821005E3D16 /* SnapKit-Dynamic */,
+			);
 			productName = TableViewProject;
 			productReference = FCE5EE8E2B94840C005E3D16 /* TableViewProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = FCE5EE852B94840C005E3D16;
+			packageReferences = (
+				FCE5EEAC2B948821005E3D16 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FCE5EE8F2B94840C005E3D16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +165,6 @@
 			files = (
 				FCE5EE9E2B94840E005E3D16 /* LaunchScreen.storyboard in Resources */,
 				FCE5EE9B2B94840E005E3D16 /* Assets.xcassets in Resources */,
-				FCE5EE992B94840C005E3D16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +175,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE5EE962B94840C005E3D16 /* ViewController.swift in Sources */,
+				FCE5EE962B94840C005E3D16 /* StudentsTableViewController.swift in Sources */,
 				FCE5EE922B94840C005E3D16 /* AppDelegate.swift in Sources */,
+				FCE5EEAB2B9486C7005E3D16 /* StudentDetailViewController.swift in Sources */,
 				FCE5EE942B94840C005E3D16 /* SceneDelegate.swift in Sources */,
+				FCE5EEA92B9484B1005E3D16 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCE5EE972B94840C005E3D16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCE5EE982B94840C005E3D16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCE5EE9C2B94840E005E3D16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +327,6 @@
 				INFOPLIST_FILE = TableViewProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +353,6 @@
 				INFOPLIST_FILE = TableViewProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +390,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCE5EEAC2B948821005E3D16 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCE5EEAD2B948821005E3D16 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE5EEAC2B948821005E3D16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FCE5EEAF2B948821005E3D16 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCE5EEAC2B948821005E3D16 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCE5EE862B94840C005E3D16 /* Project object */;
 }
